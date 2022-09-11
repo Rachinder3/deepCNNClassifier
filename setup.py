@@ -1,9 +1,11 @@
+## repetitive task, can be copied within projects
+
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as f:
-    long_description = f.read()
+    long_description = f.read()  ## reading the description from readme file
 
-__version__ = "0.0.0"
+__version__ = "0.0.0" # which version we are working with right now
 
 REPO_NAME = "deepCNNClassifier"
 AUTHOR_USER_NAME = "Rachinder3"
@@ -23,5 +25,5 @@ setuptools.setup(
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
-    package_dir={"": "src"},
+    package_dir={"": "src"}, # within src folder we can create multiple packages
     packages=setuptools.find_packages(where="src"))
