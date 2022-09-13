@@ -1,0 +1,25 @@
+import os
+import sys
+import logging
+
+
+logging_str = f"[%(asctime)s: %(levelname)s : %(module)s]: %(message)s"
+log_dir = "logs"
+log_filepath = os.path.join(log_dir,"running_logs.log")
+
+os.makedirs(log_dir, exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format=logging_str,
+    handlers=[
+        logging.FileHandler(log_filepath),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+
+### handlers define if we want to write the logs only in the file
+### or do we want to print those logs as well
+
+logger = logging.getLogger("deepClassifierLogger")
+
