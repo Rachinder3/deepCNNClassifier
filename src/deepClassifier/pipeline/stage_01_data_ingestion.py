@@ -14,12 +14,12 @@ def main():
     data_ingestion.unzip_and_clean()
 
 
-if __name__=='__main__':
+if __name__ == "__main__":
     try:
         logger.info(f"{'>>'*30} stage {STAGE_NAME} started {'>>'*30}")
         main()
         logger.info(f"{'>>'*30} stage {STAGE_NAME} Completed {'>>'*30}")
     except Exception as e:
         logger.info(e)
-        
+
         raise e
