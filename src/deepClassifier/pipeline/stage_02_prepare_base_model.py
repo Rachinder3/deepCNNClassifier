@@ -3,7 +3,7 @@ from deepClassifier.components import PrepareBaseModel
 from deepClassifier import logger
 
 
-STAGE_NAME = "Prepare Base Model Step"
+STAGE_NAME = "Prepare Base Model Stage"
 
 
 def main():
