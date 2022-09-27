@@ -6,9 +6,6 @@ stages:
     - path: configs/config.yaml
       md5: f798142768f5e282bca2754c9c311c05
       size: 871
-    - path: src/deepClassifier/components/data_ingestion.py
-      md5: 58ccfd862a54d8f6d456c19d417808ad
-      size: 2153
     - path: src/deepClassifier/pipeline/stage_01_data_ingestion.py
       md5: 3906149e22ed1be89c7044bbfcfc1dfb
       size: 717
